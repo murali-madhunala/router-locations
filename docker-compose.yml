@@ -1,0 +1,15 @@
+---
+version: '3.9'
+services:
+  router:
+    image: router-locations:v1
+    build:
+      context: .
+      target: development
+    volumes:
+      - ${PWD}:/myapp
+    ports:
+      - 3001:3000
+    environment:
+      RAILS_ENV: development
+      ROUTE_LOCATIONS_URL: https://my-json-server.typicode.com/marcuzh/router_location_test_api/db
