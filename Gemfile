@@ -23,7 +23,7 @@ gem 'waterfall', '~> 1.3.0'
 # A simple HTTP and REST client for Ruby
 gem 'rest-client', '~> 2.1.0'
 # To setup ENV variables in a easy way.
-gem 'dotenv-rails'
+gem 'dotenv-rails', '~> 3.1.0'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"

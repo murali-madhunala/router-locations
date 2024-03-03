@@ -3,9 +3,7 @@ version: '3.9'
 services:
   router:
     image: router-locations:v1
-    build:
-      context: .
-      target: development
+    build: .
     volumes:
       - ${PWD}:/myapp
     ports:
